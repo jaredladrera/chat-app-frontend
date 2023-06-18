@@ -35,7 +35,7 @@ function Chat({socket, username, room}) {
     const foundUser = JSON.parse(userloggedIn);
     console.log(foundUser);
 
-    if(userloggedIn) {
+    if(!userloggedIn) {
        navigate('/');
     }
 }, []);
